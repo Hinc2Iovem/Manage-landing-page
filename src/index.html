@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Manage landing page</title>
+  <link href="/dist/output.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="bg-slate-50 overflow-x-hidden relative">
+  
+ <header class="max-w-genbox">
+  <nav class="flex justify-between items-center mt-[3rem] shadow-md shadow-white pb-[2rem] relative">
+    <a href=""><img src="/images/logo.svg" class="hover:opacity-80" alt=""></a>
+    <ul class="hidden tablet:flex gap-[2rem] font-[500] text-[1.3rem] text-Dark-Blue ">
+      <li><a href="#" class="hover:opacity-80">Pricing</a></li>
+      <li><a href="#" class="hover:opacity-80">Product</a></li>
+      <li><a href="#" class="hover:opacity-80">About us</a></li>
+      <li><a href="#" class="hover:opacity-80">Careers</a></li>
+      <li><a href="#" class="hover:opacity-80">Community</a></li>
+    </ul>
+    <a href="#" class="hidden tablet:block bg-Bright-Red py-[1rem] px-[3rem] text-white rounded-[2rem] text-[1.4rem] font-[300] shadow-md shadow-Bright-Red cursor-pointer focus:scale-95 scaleBtn hover:opacity-80">Get Started</a>
+    <div id="burger-click" class="block tablet:hidden max-w-[2rem] h-auto cursor-pointer">
+        <div id="burger" class="block tablet:hidden w-[1.5rem] h-[.3rem] bg-black cursor-pointer relative"></div>
+      </div>
+      
+
+      <ul id="hide" class="flex flex-col gap-[2rem] font-[500] text-[1.3rem] text-Dark-Blue absolute translate-y-[80%] z-10 bg-white w-screen p-[3rem] text-center shadow-md shadow-slate-50">
+        <li><a href="#" class="hover:opacity-80">Pricing</a></li>
+        <li><a href="#" class="hover:opacity-80">Product</a></li>
+        <li><a href="#" class="hover:opacity-80">About us</a></li>
+        <li><a href="#" class="hover:opacity-80">Careers</a></li>
+        <li><a href="#" class="hover:opacity-80">Community</a></li>
+      </ul>
+      </nav>
+ 
+ </header>
+
+ <main>
+
+  <section id="hero" class="dek-10:flex-col-reverse max-w-genbox flex justify-between items-center gap-[10rem]">
+    <div left-part class="flex flex-col items-start max-w-[76rem] gap-[4rem]">
+      <h1 class="text-Dark-Blue font-[700] text-[5rem] mobile:text-[3.5rem] mobile:leading-[4rem] max-w-[43rem] leading-[6rem]">Bring everyone together to build better products.</h1> 
+   <p class="text-Dark-Grayish-Blue font-[500] text-[1.5rem] max-w-[35rem]"> Manage makes it simple for software teams to plan day-to-day 
+          tasks while keeping the larger team goals in view.</p>
+     <a href="#" class="bg-Bright-Red py-[1rem] px-[3rem] text-white rounded-[2rem] text-[1.4rem] font-[300] shadow-md shadow-Bright-Red cursor-pointer focus:scale-95 scaleBtn hover:opacity-80">Get Started</a>
+  </div>
+    
+    <div right-part class="flex max-w-[58rem] h-auto">
+      <img src="/images/illustration-intro.svg" alt="">
+    </div>
+  </section>
+
+
+
+  <section id="different-about" class="dekst:flex-col dekst:items-center dekst:gap-[4rem] max-w-genbox flex justify-between">
+    <div left-part class="foot:mb-[4rem]">
+      <h2 class="text-Dark-Blue font-[700] text-[4rem] mobile:text-[3rem] max-w-[48rem] leading-[4.5rem] mb-[3rem]">
+        What's different about Manage?
+      </h2>
+      <p class="text-Dark-Grayish-Blue font-[500] text-[1.5rem] max-w-[35rem] leading-10">Manage provides all the functionality your team needs, without 
+        the complexity. Our software is tailor-made for modern digital 
+        product teams.</p>
+    </div>
+
+    <div right-part class="flex flex-col gap-[5rem]">
+
+      <div block class="relative">
+        <p class="absolute translate-x-[-11rem] py-[1rem] px-[2.5rem] text-white bg-Bright-Red rounded-[2rem] text-[1.5rem] tracking-[.05rem] foot:translate-x-[-.5rem] foot:translate-y-[-4rem]">01</p>
+        <h4 class="text-Dark-Blue font-[700] text-[2rem] max-w-[43rem] leading-[4rem] mb-[2rem]">Track company-wide progress</h4>
+        <p class="text-Dark-Grayish-Blue font-[500] text-[1.5rem] max-w-[50rem] leading-[2.5rem]">Track company-wide progress
+          See how your day-to-day tasks fit into the wider vision. Go from 
+          tracking progress at the milestone level all the way done to the 
+          smallest of details. Never lose sight of the bigger picture again.</p>
+      </div>
+
+      <div block class="relative">
+        <p class="absolute translate-x-[-11rem] py-[1rem] px-[2.5rem] text-white bg-Bright-Red rounded-[2rem] text-[1.5rem] tracking-[.05rem] foot:translate-x-[-.5rem] foot:translate-y-[-4rem]">02</p>
+        <h4 class="text-Dark-Blue font-[700] text-[2rem] max-w-[43rem] leading-[4rem] mb-[2rem]">Advanced built-in reports</h4>
+        <p class="text-Dark-Grayish-Blue font-[500] text-[1.5rem] max-w-[50rem] leading-[2.5rem]">Set internal delivery estimates and track progress toward company 
+          goals. Our customisable dashboard helps you build out the reports 
+          you need to keep key stakeholders informed.</p>
+      </div>
+
+      <div block class="relative">
+        <p class="absolute translate-x-[-11rem] py-[1rem] px-[2.5rem] text-white bg-Bright-Red rounded-[2rem] text-[1.5rem] tracking-[.05rem] foot:translate-x-[-.5rem] foot:translate-y-[-4rem]">03</p>
+        <h4 class="text-Dark-Blue font-[700] text-[2rem] max-w-[43rem] leading-[4rem] mb-[2rem]">Everything you need in one place</h4>
+        <p class="text-Dark-Grayish-Blue font-[500] text-[1.5rem] max-w-[50rem] leading-[2.5rem]"> Stop jumping from one service to another to communicate, store files, 
+          track tasks and share documents. Manage offers an all-in-one team 
+          productivity solution.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section pre-footer class="w-screen bg-Bright-Red">
+    <div class="tablet:flex-row flex-col max-w-[146rem] py-[3rem] mx-auto my-0 px-[1rem] flex items-center justify-between">
+      <h2 class="text-white font-[500] max-w-[48rem] text-[4rem] mobile:text-[3rem] leading-[4.5rem] mb-[4rem] pt-[3rem]">Simplify how your team works today.</h2>
+      <a href="#" class="bg-white py-[1rem] px-[3rem] text-Bright-Red rounded-[2rem] text-[1.4rem] font-[600] shadow-md shadow-white cursor-pointer focus:scale-95 scaleBtn hover:opacity-80">Get Started</a>
+    </div>
+  </section>
+
+</main>
+
+  <footer class="bg-Very-Dark-Blue w-screen h-auto">
+   <div id="footer" footer-holder class="flex px-[4rem] items-center justify-between max-w-[146rem] my-0 mx-auto">
+    
+    <section id="footer-icons" left-footer class="px-[2rem] py-[5rem] flex flex-col gap-[8rem]">
+     <a href=""><img id="logo" src="/images/logo.svg" class="hover:opacity-80" alt=""></a>
+      <div class="footer-icons flex gap-[1rem]">
+       <a href=""><img class="cursor-pointer footer-img"  src="/images/icon-facebook.svg" alt=""></a>
+       <a href=""><img class="cursor-pointer footer-img"  src="/images/icon-youtube.svg" alt=""></a>
+       <a href=""><img class="cursor-pointer footer-img"  src="/images/icon-twitter.svg" alt=""></a>
+       <a href=""><img class="cursor-pointer footer-img"  src="/images/icon-pinterest.svg" alt=""></a>
+       <a href=""><img class="cursor-pointer footer-img"  src="/images/icon-instagram.svg" alt=""></a>
+      </div>
+    </section>
+
+    <div id="footer-urls" class="">
+    <section footer-uls>
+      <ul first-ul class="flex flex-col gap-[1rem]">
+        <li class="font-[300] text-[1.4rem] text-white hover:text-Bright-Red"><a href="">Home</a></li>
+        <li class="font-[300] text-[1.4rem] text-white hover:text-Bright-Red"><a href="">Pricing</a></li>
+        <li class="font-[300] text-[1.4rem] text-white hover:text-Bright-Red"><a href="">Products</a></li>
+        <li class="font-[300] text-[1.4rem] text-white hover:text-Bright-Red"><a href="">About Us</a></li>
+      </ul>
+    </section>
+
+      <section footer-uls>
+      <ul second-ul class="flex flex-col gap-[1rem]">
+          <li class="font-[300] text-[1.4rem] text-white hover:text-Bright-Red"><a href="">Careers</a></li>
+          <li class="font-[300] text-[1.4rem] text-white hover:text-Bright-Red"><a href="">Community</a></li>
+          <li class="font-[300] text-[1.4rem] text-white hover:text-Bright-Red"><a href="">Privacy Policy</a></li>
+      </ul>
+    </section>
+  </div>
+
+    <section id="footer-last" form-footer>
+      <form class="flex gap-[1rem]" action="">
+        <input placeholder="yourMail.com" type="email" required class="px-[2rem] py-[1.2rem] rounded-[2rem] text-[1.5rem]">
+        <button class="bg-Bright-Red py-[1rem] px-[3rem] text-white rounded-[2rem] text-[1.4rem] font-[300] shadow-md shadow-Bright-Red cursor-pointer focus:scale-95 scaleBtn hover:opacity-80">Go</button>
+      </form>
+      <p class="text-[1.2rem] text-Vary-Light-Gray opacity-50 font-[300]">Copyright 2020. All Rights Reserved</p>
+    </section>
+
+  </div>
+  </footer>
+
+ 
+
+  <!-- What they’ve said
+
+  Anisha Li
+  “Manage has supercharged our team’s workflow. The ability to maintain 
+  visibility on larger milestones at all times keeps everyone motivated.”
+
+  Ali Bravo
+  “We have been able to cancel so many other subscriptions since using 
+  Manage. There is no more cross-channel confusion and everyone is much 
+  more focused.”
+
+  Richard Watts
+  “Manage allows us to provide structure and process. It keeps us organized 
+  and focused. I can’t stop recommending them to everyone I talk to!”
+
+  Shanai Gough
+  “Their software allows us to track, manage and collaborate on our projects 
+  from anywhere. It keeps the whole team in-sync without being intrusive.”
+
+  
+
+  Get Started
+
+  Home
+  Pricing
+  Products
+  About Us
+  Careers
+  Community
+  Privacy Policy
+
+  Updates in your inbox…
+  Go
+
+  Copyright 2020. All Rights Reserved
+
+   -->
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+[class*="-genbox"]{
+    margin: 0rem auto 13rem auto;
+    padding: 0 1rem;
+}
+
+.scaleBtn{
+    transform: scale(1);
+}
+
+#burger::after{
+    content: '';
+    width: 1.5rem;
+    height: .25rem;
+    background-color: black;
+    position: absolute;
+    top:.5rem;
+}
+
+#burger::before{
+    content: '';
+    width: 1.5rem;
+    height: .25rem;
+    background-color: black;
+    position: absolute;
+    bottom:.5rem;
+}
+
+#logo {
+    filter: brightness(800%);
+}
+
+#footer-urls{
+    display: flex;
+    gap:10rem;
+}
+
+@media screen and (max-width: 850px) {
+    #footer{
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        align-items: baseline;
+        justify-items: center;
+        justify-content: space-around;
+    }
+    #footer-last{
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    #footer-urls{
+        display: flex;
+        gap:3rem;
+    }
+}
+
+@media screen and (max-width: 650px){
+    #footer{
+        display: flex;
+        flex-direction: column;
+        gap:3rem;
+        align-items: center;
+        justify-content: center;
+    }
+    #footer-urls{
+        display: flex;
+        gap:5rem;
+    }
+    #footer-icons{
+        padding-bottom: 2rem;
+    }
+}
+
+.footer-img{
+    filter: grayscale(100%) brightness(100%) contrast(100%);
+    transition: filter 0.3s ease-in-out;
+}
+
+.footer-img:hover{
+    filter: grayscale(0%) brightness(120%) contrast(100%) hue-rotate(12deg) saturate(88%) brightness(59%);
+}
+
+#hide{
+    display: none;
+}
+
+#hide.show{
+display: flex;
+}
